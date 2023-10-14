@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mayol Industries</title>
+    <link rel="stylesheet" href="MIStyles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anybody">
+    <script src="https://kit.fontawesome.com/d04a9bd216.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 id="title">Mayol Industries Weapons Feedback</h1>
+    <p id="description">Your cooperation and feedback is valuable to us</p>
+    <div class="center">
+        <h3>◦•◦•◦•◦•◦•◦
+        <i class="fa-solid fa-microchip fa-fade fa-lg";"></i>
+        ◦•◦•◦•◦•◦•◦</h3>
+    </div>
+    <form id="survey-form" method="post">
+      
+      <fieldset>
+        <h2>Contact Information</h2>
+        <label id="name-label" for="name">Name <input type="text" id="name" required placeholder="Full Name"/></label>
+        <label id="email-label" for="email">Email <input type="email" id="email" name="email" type="email" placeholder="Contact Email" required/></label>
+        <label id="number-label" for="number"> Reference Number<input type="number" id="number" pattern="[0-9]{8,}" min="0" max="99999999" placeholder="Ref No."></input></label>
+      </fieldset>
+      
+      <fieldset>
+        <h2>Which option best describes your current role?</h2>
+        <select id="dropdown" type="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Mayol Industries Employee</option>
+            <option value="2">Bounty Hunter</option>
+            <option value="3">Warlord</option>
+            <option value="4">Political Leader</option>
+            <option value="5">Influencer</option>
+        </select>
+      </fieldset>
+
+        <fieldset>
+            <h2>Which weapons did you test today?</h2>
+            <label class="text" for="MRR4"><input type="checkbox" class="checkbox" id="MRR4" value="1" />Minature Rail Rifle Mark.4 (MRR4)</label><br/>
+            <label class="text" for="MTG"><input type="checkbox" class="checkbox" id="MTG" value="2"/>Multi-tool Gun</label><br/>
+            <label class="text" for="BBx2"><input type="checkbox" class="checkbox" id="BBx2" value="3" />Double Shot Bazooka (BBx2)</label><br/>
+            <label class="text" for="BAT-R"><input type="checkbox" class="checkbox" id="BAT-R" value="4" />BigAlienTiddy-Ray TM</label><br/>
+        </fieldset>
+
+    <fieldset>
+        <h2>Did you enjoy your testing experience today?</h2>
+        <label for="test-yes"><input type="radio" name="test-response" class="inline" id="test-yes" value="1" checked />Yes</label>
+        <label for="test-no"><input type="radio" name="test-response" class="inline" value="2" id="test-no" />No</label>
+      </fieldset>
+
+    <fieldset class="back">
+        <h2>Please provide a short and concise feedback for the weapon you tested today:</h2>
+        <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Remember, keep it concise."></textarea>
+      </fieldset>
+      
+    <label for="emailing List">
+        <input id="emailing-List" type="checkbox" required name="emailing-list" checked /> I would like to be put on the Mayol Industries emailing list.
+      </label> </br>
+     </br>
+
+      <input id="submit" type="submit" class="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
